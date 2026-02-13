@@ -77,7 +77,7 @@ const Hero: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                   alt={PERSONAL_INFO.name}
                   className="w-72 md:w-[450px] aspect-[4/5] object-cover transition-transform duration-700 group-hover:scale-105"
                   onError={(e) => {
-                    (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=800&h=1000&q=80";
+                    (e.target as HTMLImageElement).src = "Images/Piyas.jpeg";
                   }}
                 />
               </div>
