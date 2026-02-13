@@ -33,10 +33,10 @@ const Hero: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="#projects"
+                href="#certificates"
                 className="inline-flex items-center px-8 py-4 border border-transparent text-base font-bold rounded-xl text-white bg-blue-600 hover:bg-blue-700 transition-all shadow-xl shadow-blue-500/25"
               >
-                View My Projects
+                View My Certificates
                 <ArrowRight className="ml-2 w-5 h-5" />
               </motion.a>
               <motion.a
@@ -73,7 +73,6 @@ const Hero: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                   alt={PERSONAL_INFO.name}
                   className="w-72 md:w-[450px] aspect-[4/5] object-cover transition-transform duration-700 group-hover:scale-105"
                   onError={(e) => {
-                    // Fallback to a high quality professional placeholder if image path fails
                     (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=800&h=1000&q=80";
                   }}
                 />
