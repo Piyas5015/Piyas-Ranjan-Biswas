@@ -73,7 +73,7 @@ const Hero: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
               <div className="absolute -inset-4 bg-gradient-to-tr from-blue-600 to-indigo-600 rounded-[2.5rem] blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
               <div className="relative overflow-hidden rounded-[2.5rem] border-8 border-white dark:border-slate-800 shadow-2xl">
                 <img 
-                  src="https://raw.githubusercontent.com/stackblitz/stackblitz-images/main/piyas-profile.jpg" 
+                  src={PERSONAL_INFO.profileImage} 
                   alt={PERSONAL_INFO.name}
                   className="w-72 md:w-[450px] aspect-[4/5] object-cover transition-transform duration-700 group-hover:scale-105"
                   onError={(e) => {
