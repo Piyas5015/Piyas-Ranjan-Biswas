@@ -5,7 +5,7 @@ import { CheckCircle2, Award } from 'lucide-react';
 
 const Skills: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
   return (
-    <section id="skills" className={`py-20 ${darkMode ? 'bg-slate-900/50' : 'bg-gray-50'}`}>
+    <section className={`py-20 ${darkMode ? 'bg-slate-900/50' : 'bg-gray-50'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className={`text-3xl md:text-4xl font-bold mb-4 ${darkMode ? 'text-white' : 'text-slate-900'}`}>

@@ -20,30 +20,11 @@ const Contact: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
     setStatus('submitting');
     
     try {
-      /**
-       * Note for deployment: To receive real emails without a backend,
-       * you can use Formspree (https://formspree.io). 
-       * Simply replace the URL below with your unique Formspree ID.
-       */
-      
       // Simulating a real API call for 1.5 seconds
       await new Promise(resolve => setTimeout(resolve, 1500));
       
-      /** 
-       * Real implementation logic:
-       * 
-       * const response = await fetch('https://formspree.io/f/YOUR_ID', {
-       *   method: 'POST',
-       *   headers: { 'Content-Type': 'application/json' },
-       *   body: JSON.stringify(formState)
-       * });
-       * if (!response.ok) throw new Error('Submission failed');
-       */
-      
       setStatus('success');
       setFormState({ name: '', email: '', message: '' });
-      
-      // Auto-reset the success message after 5 seconds to return to the initial state
       setTimeout(() => setStatus('idle'), 5000);
     } catch (error) {
       console.error('Error submitting form:', error);
@@ -54,7 +35,7 @@ const Contact: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
   };
 
   return (
-    <section id="contact" className="py-24">
+    <section className="py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <motion.h2 

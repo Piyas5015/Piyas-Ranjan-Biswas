@@ -6,7 +6,11 @@ import { PERSONAL_INFO } from '../constants';
 
 const Hero: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
   return (
-    <section id="home" className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+    <section 
+      id="home" 
+      className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden"
+      style={{ scrollMarginTop: '100px' }}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col md:flex-row items-center gap-16">
           <motion.div 

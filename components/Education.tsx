@@ -5,7 +5,7 @@ import { GraduationCap, Briefcase } from 'lucide-react';
 
 const Education: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
   return (
-    <section id="education" className="py-20 overflow-hidden">
+    <section className="py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Education Timeline */}

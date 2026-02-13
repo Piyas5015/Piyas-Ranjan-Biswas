@@ -42,6 +42,7 @@ const SectionWrapper: React.FC<{ children: React.ReactNode; id: string }> = ({ c
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, margin: "-100px" }}
     transition={{ duration: 0.8, ease: "easeOut" }}
+    style={{ scrollMarginTop: '100px' }}
   >
     {children}
   </motion.div>
