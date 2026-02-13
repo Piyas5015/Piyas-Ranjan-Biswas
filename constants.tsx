@@ -9,7 +9,7 @@ export const PERSONAL_INFO = {
   linkedin: "https://linkedin.com/in/piyas-ranjan-biswas",
   location: "Bangladesh",
   about: "A highly motivated Finance & Banking student with a strong foundation in financial analysis, data management, and technical tools like SQL and Python. I am passionate about bridging the gap between traditional finance and modern data analytics to drive informed business decisions.",
-  profileImage: "/Images/profile.jpg"
+  profileImage: "/Images/Piyas.jpeg"
 };
 
 export const NAV_ITEMS: NavItem[] = [
@@ -82,25 +82,25 @@ export const CERTIFICATIONS: ExtendedCertification[] = [
     title: "Introduction to SQL", 
     issuer: "Sololearn", 
     date: "11 February 2026",
-    image: "/Images/sql-cert.jpg" 
+    image: "/Images/SQL.png" 
   },
   { 
     title: "Introduction to Python", 
     issuer: "Sololearn", 
     date: "07 February 2026",
-    image: "/Images/python-cert.jpg"
+    image: "/Images/python.png"
   },
   { 
     title: "FinTech - Applications and Future Prospects", 
     issuer: "Alison", 
     date: "15 January 2026",
-    image: "/Images/fintech-cert.jpg"
+    image: "/Images/Alison.png"
   },
   { 
     title: "IELTS Academic - Band Score 6.0", 
     issuer: "British Council / IDP", 
     date: "01 February 2025",
-    image: "/Images/ielts-cert.jpg"
+    image: "/Images/Ielts.png"
   }
 ];
 
